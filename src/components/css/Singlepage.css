@@ -2,6 +2,9 @@
   box-shadow: 0 0 5px #ccc;
   padding: 15px 10px;
 }
+.single-page h2{
+  text-align: center;
+}
 .details {
   display: flex;
   justify-content: space-around;
@@ -45,7 +48,7 @@
   line-height: 1.5;
   margin: 15px 0;
 }
-.content .cart {
+.sigle-page_btn {
   background: #333;
   color: white;
   text-decoration: none;

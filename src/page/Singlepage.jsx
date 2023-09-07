@@ -5,7 +5,7 @@ import "../components/css/Singlepage.css";
 
 const Singlepage = () => {
   const { id } = useParams();
-  const { products } = useGlobalContext();
+  const { products, addToCart } = useGlobalContext();
   const product = products.find((product) => product._id === id);
 
   if (!product) {
@@ -28,9 +28,7 @@ const Singlepage = () => {
           </p>
           <p>{product.description}</p>
           <p>{product.content}</p>
-          <Link to={"/cart"} className="cart">
-            Add to cart
-          </Link>
+          <button onClick={() => addToCart(product._id) }className="sigle-page_btn">Add to Cart</button>
         </div>
       </div>
     </div>

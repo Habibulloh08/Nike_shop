@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { useGlobalContext } from "../components/Context";
+import { useGlobalContext } from "../components/Context.jsx";
 import "../components/css/Singlepage.css";
 
 const Singlepage = () => {

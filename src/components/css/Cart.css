@@ -31,15 +31,15 @@
   align-items: center;
   justify-content: space-between;
 }
-.total a {
+.total button {
   background: #333;
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 10px 25px;
+  border-radius: 7px;
 }
 .total h3 {
-  margin-right: 50px;
   color: crimson;
 }
 .empty {
@@ -65,4 +65,18 @@
   background: #9dd458;
   border: none;
   color: white;
+}
+
+@media (max-width: 650px) {
+  .total {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .total button {
+    width: 90%;
+    letter-spacing: 1.5px;
+  }
 }

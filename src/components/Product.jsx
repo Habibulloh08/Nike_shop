@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../components/css/Product.css";
 
 const Product = () => {
-  const { products, addToCart, cart } = useGlobalContext(); 
+  const { products, addToCart, cart } = useGlobalContext();
   return (
     <div id="product">
       {products.map((product, index) => (
@@ -14,7 +14,7 @@ const Product = () => {
           </Link>
           <div className="content">
             <h2>{product.title}</h2>
-            <span>{product.price}</span>
+            <span>${product.price}</span>
             <p>{product.description}</p>
             <button onClick={() => addToCart(product._id)}>Add to Cart</button>
           </div>

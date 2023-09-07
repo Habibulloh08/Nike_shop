@@ -13,6 +13,9 @@ body {
 button {
   cursor: pointer;
 }
+button:active {
+  transform: scale(0.95);
+}
 ul,
 li,
 ol {
@@ -26,7 +29,7 @@ a {
   width: 100%;
   margin: 0 auto;
 }
-Section{
+Section {
   box-shadow: 0 0 5px #ccc;
   padding: 15px 10px;
 }

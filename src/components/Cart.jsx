@@ -13,7 +13,7 @@ const Cart = () => {
           <img src={product.src} alt="" />
           <div className="content">
             <h2>{product.title}</h2>
-            <span>{product.price} USD</span>
+            <span>${product.price} USD</span>
           </div>
         </div>
       ))}

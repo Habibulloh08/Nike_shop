@@ -6,6 +6,7 @@ import Cart from "./components/Cart";
 import Singlepage from "./page/Singlepage";
 import Contact from "./components/Contact";
 import Payment from "./page/Payment";
+import Home from "./page/Home";
 // import Error from "./components/Error ";
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/product/:id" element={<Singlepage />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
         {/* <Route path="*" element={<Error />} /> */}
       </Routes>
     </div>

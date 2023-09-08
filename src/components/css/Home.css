@@ -1,0 +1,31 @@
+.home-waraper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 20px;
+  gap: 20px;
+}
+.home-img button img {
+  max-width: 170px;
+  width: 100%;
+}
+.home-img > button {
+  width: 20%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.home-product {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 0 0 5px #ccc;
+  padding: 15px 10px;
+}

@@ -28,7 +28,21 @@ const Singlepage = () => {
           </p>
           <p>{product.description}</p>
           <p>{product.content}</p>
-          <button onClick={() => addToCart(product._id) }className="sigle-page_btn">Add to Cart</button>
+          <p>Size</p>
+          <span className="button-siza">
+            {product.size.map((size, index) => (
+              <button className="size-btn" key={index} style={{ color: size }}>
+                {size}
+              </button>
+            ))}
+          </span>{" "}
+          <br />
+          <button
+            onClick={() => addToCart(product._id)}
+            className="sigle-page_btn"
+          >
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>

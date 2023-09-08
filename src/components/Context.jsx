@@ -7,10 +7,10 @@ const AppProvider = ({ children }) => {
   const [products, setProducts] = useState(data);
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
-
-  // Mahsulotlar ro'yxatiga maxsulot qo'shish
   const addToCart = (productId) => {
-    const selectedProduct = products.find((product) => product._id === productId);
+    const selectedProduct = products.find(
+      (product) => product._id === productId
+    );
 
     const updatedCart = [...cart];
 
@@ -65,7 +65,6 @@ const AppProvider = ({ children }) => {
     setTotal(res);
   };
 
-  // Mahsulotlarni localStorage-da saqlash va uni o'qish
   useEffect(() => {
     const dataCart = JSON.parse(localStorage.getItem("dataCart"));
     const dataTotal = JSON.parse(localStorage.getItem("dataTotal"));
@@ -79,7 +78,6 @@ const AppProvider = ({ children }) => {
     }
   }, []);
 
-  // Mahsulotlarni localStorage-da saqlash
   useEffect(() => {
     localStorage.setItem("dataCart", JSON.stringify(cart));
     localStorage.setItem("dataTotal", JSON.stringify(total));

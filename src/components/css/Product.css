@@ -22,7 +22,7 @@
 .card img {
   max-width: 300px;
   width: 100%;
-  height: 100%;
+  height: 90%;
   max-height: 300px;
   display: block;
   object-fit: cover;
@@ -31,19 +31,38 @@
   transform: scale(1.1);
   transition: 0.5s linear;
 }
+
 .card h2 {
   text-transform: uppercase;
   margin: 10px 0;
+}
+.content-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .card h2:hover {
   color: crimson;
 }
 .card span {
   color: crimson;
+  font-size: 18px;
 }
 .card p {
-  margin: 10px 0;
+  color: #000;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
+.content {
+  width: 35%;
+}
+.content .row {
+  width: 100%;
+  justify-content: space-between;
+}
+
 .card button {
   border: none;
   outline: none;
@@ -55,4 +74,83 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 15px 0;
+}
+.filtr {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-buttons {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-buttons > button {
+  width: 23%;
+  border-radius: 8px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+.filtr-search {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  width: 406px;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding-left: 10px;
+  gap: 10px;
+}
+.filtr-search input {
+  border: none;
+  width: 90%;
+  height: 100%;
+  outline: none;
+  font-size: 17.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.filtr-search img {
+  width: 20px;
+}
+@media (max-width: 650px) {
+  .filtr {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 10px;
+  }
+  .filtr-search {
+    width: 100%;
+    height: 65px;
+  }
+  .filter-buttons {
+    order: 1;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .filter-buttons > button {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }

@@ -5,7 +5,9 @@ header {
   align-items: center;
   overflow: hidden;
 }
+
 header .logo a {
+  font-size: 20px;
   text-transform: uppercase;
   color: black;
 }
@@ -72,5 +74,4 @@ header .close {
   nav ul.toggle {
     left: 0%;
   }
-  
 }

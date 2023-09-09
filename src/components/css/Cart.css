@@ -22,7 +22,7 @@
   cursor: pointer;
   background: transparent;
   border: none;
-  font-size: 17px;
+  font-size: 17pt;
 }
 .total {
   width: 100%;
@@ -68,6 +68,16 @@
 }
 
 @media (max-width: 650px) {
+  .content .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .row h2 {
+    font-size: 18px;
+  }
+  .content .row span {
+    font-size: 15px;
+  }
   .total {
     width: 100%;
     display: flex;

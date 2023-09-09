@@ -26,47 +26,36 @@ const Home = () => {
     <div className="single-page">
       <div className="home-waraper">
         <div className="home-img">
-          <button onClick={() => setFilter("Reebok")}>
-            <img src={Reebok} alt="" />
-          </button>
+          <Link to={"/product"}>
+            <button onClick={() => setFilter("Reebok")}>
+              <img src={Reebok} alt="" />
+            </button>
+          </Link>
           <hr />
-          <button onClick={() => setFilter("Nike")}>
-            <img src={Nike} alt="" />
-          </button>
+          <Link to={"/product"}>
+            <button onClick={() => setFilter("Nike")}>
+              <img src={Nike} alt="" />
+            </button>
+          </Link>
           <hr />
-          <button onClick={() => setFilter("Adidas")}>
-            <img src={Adidas} alt="" />
-          </button>
+          <Link to={"/product"}>
+            <button onClick={() => setFilter("Adidas")}>
+              <img src={Adidas} alt="" />
+            </button>
+          </Link>
           <hr />
-          <button onClick={() => setFilter("Puma")}>
-            <img src={Puma} alt="" />
-          </button>
+          <Link to={"/product"}>
+            <button onClick={() => setFilter("Puma")}>
+              <img src={Puma} alt="" />
+            </button>
+          </Link>
           <hr />
-          <button onClick={() => setFilter("Boss")}>
-            <img src={Boss} alt="" />
-          </button>
+          <Link to={"/product"}>
+            <button onClick={() => setFilter("Boss")}>
+              <img src={Boss} alt="" />
+            </button>
+          </Link>
         </div>
-      </div>
-
-      {/* Filtrlangan mahsulotlarni chiqarish */}
-      <div className="home-product">
-        {filteredProducts.map((product, index) => (
-          <div key={product._id} className="card">
-            <Link to={`/product/${product._id}`}>
-              <img src={product.src} alt={product.title} />
-            </Link>
-            <div className="content-product">
-              <h2>{product.title}</h2>
-              <div className="content-text">
-                <p>{product.description}</p>
-                <span>${product.price}</span>
-              </div>
-              <button onClick={() => addToCart(product._id)}>
-                Add TO Cart
-              </button>
-            </div>
-          </div>
-        ))}
       </div>
     </div>
   );

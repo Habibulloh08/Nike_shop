@@ -18,11 +18,13 @@ const Product = () => {
           <button onClick={() => setFilter("Nike")}>Nike</button>
           <button onClick={() => setFilter("Adidas")}>Adidas</button>
           <button onClick={() => setFilter("Puma")}>Puma</button>
+          <button onClick={() => setFilter("Boss")}>Boss</button>
+          <button onClick={() => setFilter("Reebok")}>Reebok</button>
         </div>
         <div className="filtr-search">
           <img src={Search} alt="" />
           <input
-            type="search"
+            type="text"
             placeholder="Maxsulotlarni qidirish..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}

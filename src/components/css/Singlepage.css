@@ -9,7 +9,9 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
   margin: 50px 0;
+  overflow: hidden;
 }
 .details-img {
   max-width: 470px;
@@ -18,9 +20,10 @@
   width: 100%;
   display: block;
   object-fit: cover;
+  padding-top: 5px;
 }
 .details-img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.5s linear;
 }
 .details .content {

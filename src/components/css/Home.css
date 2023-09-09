@@ -7,12 +7,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  border: 1px solid gray;
   padding: 20px;
   gap: 20px;
 }
 .home-img button img {
-  max-width: 170px;
+  max-width: 200px;
   width: 100%;
 }
 .home-img > button {
@@ -28,4 +27,24 @@
   flex-wrap: wrap;
   box-shadow: 0 0 5px #ccc;
   padding: 15px 10px;
+}
+@media (max-width: 650px) {
+  .home-img {
+    border: none;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-img button img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+  }
+  .home-img > button {
+    width: 350%;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
 }

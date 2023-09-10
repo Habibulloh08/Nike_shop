@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Menu from "../assets/burger.svg";
 import Close from "../assets/xmark.svg";
 import Cart from "../assets/cart.svg";
-import Logo from "../assets/sport-logo.avif";
+// import Logo from "../assets/sport-logo.avif";
 import { Link } from "react-router-dom";
 import "./css/Header.css";
 import { useGlobalContext } from "./Context";

@@ -6,10 +6,9 @@ import "../components/css/Product.css";
 import Search from "../assets/search.svg";
 
 const Product = () => {
-  const { products, addToCart, cart } = useGlobalContext();
+  const { products, addToCart } = useGlobalContext();
   const [filter, setFilter] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
-
   return (
     <div className="single-page">
       <div className="filtr">

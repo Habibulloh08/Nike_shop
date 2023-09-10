@@ -1,0 +1,59 @@
+.sigle-page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.contact-page {
+  display: flex;
+  width: 80%;
+}
+
+.contact-content {
+  position: relative;
+  width: 40%;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+#contact-img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  /* border-radius: 5 0%; */
+}
+
+.contact-content h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Haqimda bo'limi */
+.about-content {
+  flex: 1;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.about-content h2 {
+  text-align: center;
+  color: #333;
+}
+
+.about-content img {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+.about-content p {
+  color: #666;
+  text-align: center;
+}
+
+/* Kontakt formasi */

@@ -19,7 +19,7 @@ const AppProvider = ({ children }) => {
     } else {
       updatedCart.forEach((item) => {
         if (item._id === selectedProduct._id) {
-          item.count += 1;
+          item.count += 0;
           alert("Mahsulot savatga qo'shildi");
         }
       });
